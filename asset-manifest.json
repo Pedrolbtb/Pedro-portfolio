@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/pedro-portfolio/static/css/main.f9365393.css",
-    "main.js": "/pedro-portfolio/static/js/main.b457f0b7.js",
-    "static/media/fotominha.png": "/pedro-portfolio/static/media/fotominha.80977a23c4b013aa2552.png",
-    "static/media/circuloroxo.png": "/pedro-portfolio/static/media/circuloroxo.a3916a06c0875e8b2259.png",
-    "static/media/vihvawatch.jpg": "/pedro-portfolio/static/media/vihvawatch.b3d62d769bd94dd158ef.jpg",
-    "static/media/vihvaweb.jpg": "/pedro-portfolio/static/media/vihvaweb.79f61e757dda838df39d.jpg",
-    "static/media/circulosemnada.png": "/pedro-portfolio/static/media/circulosemnada.66037c370dff748d243f.png",
-    "static/media/inicio.jpg": "/pedro-portfolio/static/media/inicio.aa69f20a017ce2beac96.jpg",
-    "static/media/obsremedio.jpg": "/pedro-portfolio/static/media/obsremedio.c263ad1949c985f19d85.jpg",
-    "static/media/linkedin.png": "/pedro-portfolio/static/media/linkedin.a680cb8ad2b88be03d17.png",
-    "static/media/vihvaapp.jpg": "/pedro-portfolio/static/media/vihvaapp.cad5f942f2eaa68cba40.jpg",
-    "static/media/logo.svg": "/pedro-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/pedro-portfolio/index.html",
-    "main.f9365393.css.map": "/pedro-portfolio/static/css/main.f9365393.css.map",
-    "main.b457f0b7.js.map": "/pedro-portfolio/static/js/main.b457f0b7.js.map"
+    "main.css": "/Pedro-portfolio/static/css/main.f9365393.css",
+    "main.js": "/Pedro-portfolio/static/js/main.d2421290.js",
+    "static/media/fotominha.png": "/Pedro-portfolio/static/media/fotominha.80977a23c4b013aa2552.png",
+    "static/media/circuloroxo.png": "/Pedro-portfolio/static/media/circuloroxo.a3916a06c0875e8b2259.png",
+    "static/media/vihvawatch.jpg": "/Pedro-portfolio/static/media/vihvawatch.b3d62d769bd94dd158ef.jpg",
+    "static/media/vihvaweb.jpg": "/Pedro-portfolio/static/media/vihvaweb.79f61e757dda838df39d.jpg",
+    "static/media/circulosemnada.png": "/Pedro-portfolio/static/media/circulosemnada.66037c370dff748d243f.png",
+    "static/media/inicio.jpg": "/Pedro-portfolio/static/media/inicio.aa69f20a017ce2beac96.jpg",
+    "static/media/obsremedio.jpg": "/Pedro-portfolio/static/media/obsremedio.c263ad1949c985f19d85.jpg",
+    "static/media/linkedin.png": "/Pedro-portfolio/static/media/linkedin.a680cb8ad2b88be03d17.png",
+    "static/media/vihvaapp.jpg": "/Pedro-portfolio/static/media/vihvaapp.cad5f942f2eaa68cba40.jpg",
+    "static/media/logo.svg": "/Pedro-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Pedro-portfolio/index.html",
+    "main.f9365393.css.map": "/Pedro-portfolio/static/css/main.f9365393.css.map",
+    "main.d2421290.js.map": "/Pedro-portfolio/static/js/main.d2421290.js.map"
   },
   "entrypoints": [
     "static/css/main.f9365393.css",
-    "static/js/main.b457f0b7.js"
+    "static/js/main.d2421290.js"
   ]
 }
