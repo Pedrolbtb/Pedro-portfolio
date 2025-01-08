@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=DM+Serif+Text:ital@0;1&family=Faculty+Glyphic&family=Glass+Antiqua&family=Lobster&display=swap');
+/*verde maneirin - background: #c6d5c6;*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Overpass+Mono:wght@300..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #854feb;
+  
+}
+
+.wrapper-main {
+  width: 95%; 
+  height: 90vh;
+  margin: 5vh auto; 
+  border: 2px solid #854feb;
+  border-radius: 50px;
+  display: flex;
+  box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);;
+  flex-direction: column;
+  align-items: center;
+  -webkit-backdrop-filter: blur(14.4px);
+}
+
+.highlight {
+  color: transparent; /* Remove o preenchimento da cor da fonte */
+  -webkit-text-stroke: 1px #3a3633; /* Adiciona um contorno ao texto */
+  text-stroke: 1px #3a3633; /* Suporte para navegadores que não usam o prefixo -webkit- */
+  transition: 0.5s ;
+}
+
+.highlight:hover {
+  color: #7a3bee;
+  -webkit-text-stroke: 0.5px #7a3bee; 
+  text-stroke: 0; 
+  transition: 0.5s ;
+}
+
+
+.circuloroxo {
+  position: absolute; /* Position the circle absolutely within the container */
+  top: 10%; /* Adjust the position as needed */
+  left: 55%; /* Adjust the position as needed */
+  width: 20%; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: 0.5s;
+  
+}
+
+.circulosemnada {
+  position: absolute; /* Position the circle absolutely within the container */
+  top: 30%; /* Adjust the position as needed */
+  left: 70%; /* Adjust the position as needed */
+  width: 20%; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: 0.5s;
+}
+
+
+.links-content {
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+  font-size: 2.5vh;
+  color: #010409;
+  font-weight: 100;
+  display: flex;
+  font-family: "Overpass Mono", serif;;
+  gap: 10%;
+  text-align: center;
+}
+
+
+html, body{
+  font-family: "Overpass Mono", serif;;
+  background: whitesmoke;
+  height: 100%;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.nav-links{
+  display: flex;
+}
+
+.logo {
+  position: relative; /* Necessário para o posicionamento da seta */
+}
+
+.logo, .nav-item{
+  margin: 2em;
+  color: #3a3633;
+  font-weight: 400;
+  font-size: 1.3vw;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 50%; /* Centraliza a seta verticalmente */
+  left: 85%; /* Ajuste o valor conforme necessário para posicionar corretamente a seta ao lado do texto */
+  transform: translateY(-50%);
+  width: 1.5em;
+  opacity: 0; /* A seta estará invisível por padrão */
+  transition: 0.5s;
+}
+
+
+.logo:hover .arrow-icon {
+  opacity: 1; /* A seta fica visível quando passar o mouse sobre o container */
+  transform: translateX(30%) translateY(-50%);;
+  transition: 0.5s;
+}
+
+h3{
+  position: relative; /* Necessário para o posicionamento da seta */
+}
+
+.arrow-iconlink {
+  position: absolute;
+  top: 50%; /* Centraliza a seta verticalmente */
+  left: 95%; /* Ajuste o valor conforme necessário para posicionar corretamente a seta ao lado do texto */
+  transform: translateY(-115%);
+  width: 1.5em;
+  opacity: 0; /* A seta estará invisível por padrão */
+  transition: 0.5s;
+}
+
+h3:hover .arrow-iconlink {
+  opacity: 1;
+  transform: translateX(30%) translateY(-115%);
+  transition: 0.5s;
+}
+
+
+
+
+h1{
+  width: 50%;
+  position: absolute;
+  top: 40%;
+  font-family: "Josefin sans";
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: 4vw;
+  line-height: 1; 
+  text-transform: uppercase;
+}
+
+.euHome{
+  width: 32%;
+  position: absolute;
+  top: 60%;
+  color: #3a3633;
+  left: 21%;
+  transform: translate(-50%, -50%);
+  font-family: "Overpass Mono", serif;
+  font-weight: 100;
+  font-size: 1.2vw;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+
+
+.image-content {
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.fotominha {
+  width: 60%;
+  margin-top: 30%;
+  object-fit: contain;
+  z-index: 1;
+  transition: width 0.5s ease, margin-top 0.5s ease;
+}
+
+.fotominha:hover {
+  width: 65%;
+}
+
+.fotominha:hover ~ .circuloroxo{
+  transform: translateX(30%) translateY(10%);
+  transition: 0.5s ease;
+}
+
+.fotominha:hover ~ .circulosemnada {
+  transform: translateX(-20%) translateY(-20%);
+  transition: 0.5s ease;
+}
+
+
+.containerHome {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 85% 1fr;
+  gap: 20px;
+  width: 95%;
+  height: 85%;
+}
+
+.text-content {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding: 20px;
+  height: 80%;
+}
+
+.underline{
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  color: #3F3B37;
+  display: flex;
+}
+
+
+a{
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  color: #3F3B37;
+  display: flex;
+  transition: 0.5s;
+}
+
+a:hover{
+  color: #7a3bee;
+  transition: 0.5s;
+}
+
+.underline::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  color: #854feb;
+  background: #854feb;
+  transition: width .2s;
+}
+
+.underline:hover::after{
+  width: 100%;
+  color: #854feb;
+}
+
+.icons {
+  margin-right: 2%;
+  width: 10%;
+}
+
+.containerProjects {
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.containerProjects::-webkit-scrollbar {
+  width: 8px; /* Largura da scrollbar */
+}
+
+.containerProjects::-webkit-scrollbar-track {
+  background: #f0e6ff; /* Cor de fundo da track */
+  border-radius: 10px;
+}
+
+.containerProjects::-webkit-scrollbar-thumb {
+  background: #854feb; /* Cor da barra roxa */
+  border-radius: 10px; /* Deixa a barra com bordas arredondadas */
+}
+
+.containerProjects::-webkit-scrollbar-thumb:hover {
+  background: #5e2dbf; /* Cor da barra ao passar o mouse */
+}
+
+/* Para navegadores que suportam scrollbar-color */
+.containerProjects {
+  scrollbar-color: #854feb #f0e6ff; /* Barra roxa e track clara */
+  scrollbar-width: thin; /* Define a largura fina */
+}
+
+.imageProjects {
+  width: 22em;
+  height: auto;
+  background-color: transparent;
+  position: relative;
+}
+
+.projects-content {
+  width: 100%;
+  border: #6096a8 2px solid;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.projects-content:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.overlay:hover .projects-content {
+  opacity: 0.2; /* Faz a imagem ficar branca */
+  transform: scale(1.05); /* Aumenta o tamanho */
+  border: #6096a8 2px solid;
+  border-radius: 50px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #247894;
+  font-size: 1.5rem;
+  font-family: "Overpass Mono", serif;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Garante que o texto não interfere no hover */
+}
+
+/* Exibe o texto ao passar o mouse */
+.overlay:hover .overlay-text {
+  opacity: 1;
+}
+
+.slide-out{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: #854feb;
+  transform-origin: top;
+}
+
+.slide-in{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background: #854feb;
+  transform-origin: bottom;
+}
+
+.slide-inva{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background: #598BA4;
+  transform-origin: bottom;
+}
+
+.slide-outva{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: #598BA4;
+  transform-origin: top;
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.7); /* Cor do fundo do overlay */
+  filter: blur(5px); /* Aplica o blur */
+  pointer-events: none; /* Não interage com os cliques */
+  z-index: 3; /* Coloca o overlay acima de outros elementos */
+  transition: filter 1s ease-in-out; /* Transição suave para remover o blur */
+}
+
+.containerHome.no-blur .blur-overlay {
+  filter: blur(0); /* Remove o blur */
+}

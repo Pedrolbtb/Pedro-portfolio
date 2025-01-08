@@ -1,0 +1,6 @@
+:global(html, body) {
+  font-family: "Faculty Glyphic", serif;
+  background: whitesmoke;
+  height: 100%;
+  overflow: hidden;
+}
