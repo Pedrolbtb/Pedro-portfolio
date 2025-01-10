@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=DM+Serif+Text:ital@0;1&family=Faculty+Glyphic&family=Glass+Antiqua&family=Lobster&display=swap');
 /*verde maneirin - background: #c6d5c6;*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Overpass+Mono:wght@300..700&display=swap');
+
+@font-face {
+  font-family: "Peanut Butter";
+  src: url(../src/assets/Peanut\ Butter.ttf);
+}
+
+@font-face{
+  font-family: "Cloudsoft";
+  src: url(../src/assets/CloudSoft-Bold-700.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +85,8 @@ html, body{
   font-family: "Overpass Mono", serif;;
   background: whitesmoke;
   height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -140,7 +153,7 @@ h3:hover .arrow-iconlink {
 
 
 
-h1{
+.h1Portfolio{
   width: 50%;
   position: absolute;
   top: 40%;
@@ -318,6 +331,8 @@ a:hover{
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+
+
 .projects-content:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
@@ -326,7 +341,6 @@ a:hover{
 .overlay {
   position: relative;
   display: inline-block;
-  overflow: hidden;
   padding: 1em;
 }
 
@@ -386,7 +400,7 @@ a:hover{
   width: 100%;
   height: 100vh;
   background: #598BA4;
-  transform-origin: bottom;
+  transform-origin: top;
 }
 
 .slide-outva{
@@ -397,7 +411,7 @@ a:hover{
   height: 100vh;
   z-index: 2;
   background: #598BA4;
-  transform-origin: top;
+  transform-origin: bottom;
 }
 
 .blur-overlay {
@@ -415,4 +429,8 @@ a:hover{
 
 .containerHome.no-blur .blur-overlay {
   filter: blur(0); /* Remove o blur */
+}
+
+.nav-item.active .underline {
+  color: #854feb; /* Escolha uma cor de destaque */
 }

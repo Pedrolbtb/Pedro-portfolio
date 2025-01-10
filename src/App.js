@@ -7,6 +7,8 @@ import Home from './Components/Home';
 import About from "./Components/About"
 import Projects from './Components/Projects';
 import VihvaApp from './Components/VihvaApp';
+import VihvaWeb from './Components/VihvaWeb';
+import VihvaWatch from './Components/VihvaWatch';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -29,13 +31,13 @@ function App() {
           </div>
         )}
         {!isMainWrapperRoute && (
-          <div className="wrapper-mainva">
           <AnimatePresence mode='wait'>
             <Routes location={location} key={location.pathname}>
               <Route path='/VihvaApp' element={<VihvaApp />} />
+              <Route path='/VihvaWeb' element={<VihvaWeb />} />
+              <Route path='/VihvaWatch' element={<VihvaWatch />} />
             </Routes>
           </AnimatePresence>
-          </div>
         )}
       </div>
     </>

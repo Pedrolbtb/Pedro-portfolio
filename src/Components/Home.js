@@ -4,16 +4,20 @@ import transition from '../transition';
 import fotominha from '../assets/fotominha.png';
 import circuloroxo from '../assets/circuloroxo.png';
 import circulosemnada from '../assets/circulosemnada.png';
-import arrow from '../assets/arrow.png';
-import '../styles/home.module.css';
+import arrow from '../assets/arrow.png';  
 import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
 
 const Home = () => {
   const [displayedText, setDisplayedText] = useState("");
   const [isCursorVisible, setIsCursorVisible] = useState(true);
-  const fullText = "Sou um desenvolvedorfront-end</span> e <span style={{color: '#7a3bee'}}>UI/UX Designer</span>, apaixonado por inovação e arte, sempre em busca de criar experiências digitais únicas e impactantes.";
+  const fullText = "Sou um desenvolvedor front-end e UI/UX Designer e editor de vídeos, apaixonado por inovação e arte, sempre em busca de criar experiências digitais únicas e impactantes.";
+
   useEffect(() => {
+    // Bloqueando o scroll no body e html
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden'; // Também bloqueia o scroll no HTML
+  
     let i = 0;
     const typingInterval = setInterval(() => {
       if (i < fullText.length) {
@@ -27,8 +31,13 @@ const Home = () => {
         }, 500); // Blinking interval
       }
     }, 50);
-
-    return () => clearInterval(typingInterval);
+  
+    return () => {
+      // Permitindo o scroll novamente
+      document.body.style.overflow = 'auto';
+      document.documentElement.style.overflow = 'auto'; // Restaurando o overflow no HTML
+      clearInterval(typingInterval);
+    };
   }, []);
 
   return (
@@ -41,7 +50,9 @@ const Home = () => {
 
       <div className='containerHome'>
         <div className="text-content">
-          <h1><span className="highlight">Olá,eu sou o</span> <br />Pedro Bomfim</h1>
+          <h1 className='h1Portfolio'>
+            <span className="highlight">Olá, eu sou o</span> <br />Pedro Bomfim
+          </h1>
           <h2 className="euHome">
             {displayedText}
             <span style={{ visibility: isCursorVisible ? 'visible' : 'hidden' }}>|</span>
@@ -53,11 +64,14 @@ const Home = () => {
           <img className="circulosemnada" src={circulosemnada} alt="circulosemnada" />
         </div>
         <div className="links-content">
-          <h3><a href="https://github.com/Pedrolbtb">GitHub</a>
-          <img className='arrow-iconlink' src={arrow} alt="arrow" />
+          <h3>
+            <a href="https://github.com/Pedrolbtb">GitHub</a>
+            <img className='arrow-iconlink' src={arrow} alt="arrow" />
           </h3>
-          <h3><a href="https://www.linkedin.com/in/pedro-henrique-lopes-batista-teixeira-bomfim-46bb88174/">LinkedIn</a>
-          <img className='arrow-iconlink' src={arrow} alt="arrow" /></h3>
+          <h3>
+            <a href="https://www.linkedin.com/in/pedro-henrique-lopes-batista-teixeira-bomfim-46bb88174/">LinkedIn</a>
+            <img className='arrow-iconlink' src={arrow} alt="arrow" />
+          </h3>
         </div>
       </div>
     </>

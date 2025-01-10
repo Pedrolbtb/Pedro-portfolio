@@ -1,0 +1,12 @@
+.printVihvawatch {
+    width: 40%;
+    margin-left: 5%;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  
+  }
+  
+  .printVihvawatch:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }

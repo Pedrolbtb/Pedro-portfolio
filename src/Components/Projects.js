@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom';
 import vihvaapp from '../assets/vihvaapp.jpg';
 import vihvaweb from '../assets/vihvaweb.jpg';
 import vihvawatch from '../assets/vihvawatch.jpg';
+import edicao from '../assets/editores-de-video.png';
 import linkbar from './LinkBar'
 import arrow from '../assets/arrow.png';
 
 const Projects = () => {
   const [displayedText, setDisplayedText] = useState("");
   const [isCursorVisible, setIsCursorVisible] = useState(true);
-  const fullText = "Aqui estão projetos que trabalhei e desenvolvi, com diversas linguagens como Kotlin, HTML, CSS e JavaScript.";
+  const fullText = "Aqui estão projetos que trabalhei e desenvolvi, contendo aplicações com diversas linguagens como Kotlin, HTML, CSS e JavaScript e edições de vídeos.";
 
   useEffect(() => {
     let i = 0;
@@ -41,7 +42,7 @@ const Projects = () => {
       </Helmet>
       <div className='containerHome'>
       <div className="text-content">
-        <h1><span className="highlight">Esses são os</span> <br /> meus Projetos</h1>
+        <h1 className='h1Portfolio'><span className="highlight">Esses são os</span> <br /> meus Projetos</h1>
         <h2 className="euHome" style={{top: "55%"}}>
           {displayedText}
           <span style={{ visibility: isCursorVisible ? 'visible' : 'hidden' }}>|</span>
@@ -58,18 +59,26 @@ const Projects = () => {
     </Link>
   </div>
   <div className="imageProjects">
+    <Link to="/VihvaWeb">
     <div className="overlay">
       <img className="projects-content" src={vihvaweb} alt="Vihva Web" />
-      <div className="overlay-text">Ver mais de Vihva Web</div>
+      <div className="overlay-text">Ver mais de Vihva Medical Center</div>
     </div>
+    </Link>
   </div>
   <div className="imageProjects">
-    
+    <Link to="/VihvaWatch">
     <div className="overlay">
       <img className="projects-content" src={vihvawatch} alt="Vihva Watch" />
       <div className="overlay-text">Ver mais de Vihva Watch</div>
     </div>
-   
+    </Link>
+  </div>
+  <div className="imageProjects">
+    <div className="overlay">
+      <img className="projects-content" src={edicao} alt="Vihva Watch" />
+      <div className="overlay-text">Ver mais edições de vídeos</div>
+    </div>
   </div>
 </div>
 <div className="links-content">
