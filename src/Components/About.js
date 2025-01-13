@@ -1,6 +1,7 @@
 import React from 'react'
 import transition from '../transition'
 import './../styles/about.css';
+import { Helmet } from 'react-helmet';
 import arrow from './../assets/arrow.png';
 import curriculo from './../assets/Curriculo Pedro Bomfim.pdf';
 
@@ -14,6 +15,11 @@ function baixarPDF() {
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sobre</title>
+      </Helmet>
       <div className="conteudoHorizontalAbout">
         <div style={{width: "45%", marginRight: "5%", marginLeft: "3%"}}>
         <h1 style={{ marginTop: "2%", fontSize: "3em"}}>Habilidades</h1>

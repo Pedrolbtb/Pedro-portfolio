@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import About from "./Components/About"
 import Projects from './Components/Projects';
 import VihvaApp from './Components/VihvaApp';
+import Edicao from './Components/Edicao';
 import VihvaWeb from './Components/VihvaWeb';
 import VihvaWatch from './Components/VihvaWatch';
 import { AnimatePresence } from 'framer-motion';
@@ -36,6 +37,7 @@ function App() {
               <Route path='/VihvaApp' element={<VihvaApp />} />
               <Route path='/VihvaWeb' element={<VihvaWeb />} />
               <Route path='/VihvaWatch' element={<VihvaWatch />} />
+              <Route path='/Edicao' element={<Edicao />} />
             </Routes>
           </AnimatePresence>
         )}

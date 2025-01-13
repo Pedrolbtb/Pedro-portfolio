@@ -1,0 +1,40 @@
+.tituloedicao{
+    font-size: 10rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: end;
+    margin-right: 20%;
+}
+
+.titulo2edicao{
+    font-size: 10rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: end;
+    margin-right: 40%;
+}
+
+.linha1titulo{
+    background-color: #A790E0;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.linha2titulo{
+    background-color: #729ACC;
+    width: 80%;
+    margin-left: 20%;
+    border: 1px solid black;
+}
+
+.vertical-hr {
+    width: 1px; /* Largura da linha */
+    height: 100%; /* Ocupa toda a altura da div pai */
+    background-color: black; /* Cor da linha */
+    border: none; /* Remove borda padrão */
+    position: fixed; /* Posiciona a linha de forma absoluta */
+    left: 50%; /* Centraliza a linha horizontalmente */
+
+}

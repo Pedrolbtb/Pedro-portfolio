@@ -75,10 +75,12 @@ const Projects = () => {
     </Link>
   </div>
   <div className="imageProjects">
+    <Link to="/Edicao">
     <div className="overlay">
       <img className="projects-content" src={edicao} alt="Vihva Watch" />
       <div className="overlay-text">Ver mais edições de vídeos</div>
     </div>
+    </Link>
   </div>
 </div>
 <div className="links-content">
