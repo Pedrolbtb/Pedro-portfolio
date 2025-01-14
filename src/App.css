@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=DM+Serif+Text:ital@0;1&family=Faculty+Glyphic&family=Glass+Antiqua&family=Lobster&display=swap');
 /*verde maneirin - background: #c6d5c6;*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Overpass+Mono:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Overpass+Mono:wght@300..700&family=Poetsen+One&display=swap');
 
 @font-face {
   font-family: "Peanut Butter";
@@ -320,14 +320,14 @@ a:hover{
 }
 
 .projects-content {
-  width: 100%;
   border: #6096a8 2px solid;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   display: block;
-  width: 100%;
+  width: 90%;
+  box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -411,6 +411,28 @@ a:hover{
   height: 100vh;
   z-index: 2;
   background: #598BA4;
+  transform-origin: bottom;
+}
+
+.slide-inEdit{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background: #A790E0;
+  transform-origin: top;
+}
+
+.slide-outEdit{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: #A790E0;
   transform-origin: bottom;
 }
 

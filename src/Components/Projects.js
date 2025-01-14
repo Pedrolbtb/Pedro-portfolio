@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import vihvaapp from '../assets/vihvaapp.jpg';
 import vihvaweb from '../assets/vihvaweb.jpg';
 import vihvawatch from '../assets/vihvawatch.jpg';
-import edicao from '../assets/editores-de-video.png';
+import edicao from '../assets/edicaocapa.jpg';
 import linkbar from './LinkBar'
 import arrow from '../assets/arrow.png';
 
@@ -77,7 +77,7 @@ const Projects = () => {
   <div className="imageProjects">
     <Link to="/Edicao">
     <div className="overlay">
-      <img className="projects-content" src={edicao} alt="Vihva Watch" />
+      <img style={{border: '1px solid white'}} className="projects-content" src={edicao} alt="Edição de vídeos" />
       <div className="overlay-text">Ver mais edições de vídeos</div>
     </div>
     </Link>
