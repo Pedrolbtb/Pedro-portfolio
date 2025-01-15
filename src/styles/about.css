@@ -50,3 +50,71 @@
     margin-top: 5%;
     width: 100%;
   }
+
+  .links-contentA {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    font-size: 2.5vh;
+    color: #010409;
+    font-weight: 100;
+    display: flex;
+    font-family: "Overpass Mono", serif;;
+    gap: 10%;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 3%;
+  }
+
+  .containerJornada{
+    width: 45%;
+     margin-Right: 5%;
+      margin-Left: 3%; 
+      margin-Bottom: 8%;
+  }
+
+
+  @media (max-width: 1680px) {
+
+    .habilidades {
+      font-size: 1.38rem;
+      color: #010409;
+      font-weight: 100;
+      font-family: "Overpass Mono", serif;
+      padding-top: 2%;
+    }
+
+    .links-contentA {
+      grid-column: 1 / 2;
+      grid-row: 2 / 2;
+      font-size: 2.5vh;
+      color: #010409;
+      font-weight: 100;
+      display: flex;
+      font-family: "Overpass Mono", serif;;
+      gap: 10%;
+      text-align: center;
+      margin-top: 11.5%;
+      margin-left: 3%;
+    }
+    
+    .containerJornada{
+      width: 45%;
+       margin-Right: 5%;
+        margin-Left: 3%; 
+        margin-Bottom: 11%;
+    }
+  
+
+  }
+
+  @media (max-width: 1440px) {
+
+    .habilidades {
+      font-size: 1rem;
+      color: #010409;
+      font-weight: 100;
+      font-family: "Overpass Mono", serif;
+      padding-top: 2%;
+    }
+
+  }

@@ -354,7 +354,7 @@ a:hover{
 .overlay-text {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 46%;
   transform: translate(-50%, -50%);
   color: #247894;
   font-size: 1.5rem;
@@ -455,4 +455,108 @@ a:hover{
 
 .nav-item.active .underline {
   color: #854feb; /* Escolha uma cor de destaque */
+}
+
+@media (max-width: 1680px) {
+
+  .image-content {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .fotominha {
+    width: 65%;
+    margin-top: 30%;
+    object-fit: contain;
+    z-index: 1;
+    margin-right: 5%;
+    transition: width 0.5s ease, margin-top 0.5s ease;
+  }
+  
+  .fotominha:hover {
+    width: 70%;
+  }
+  
+  .fotominha:hover ~ .circuloroxo{
+    transform: translateX(30%) translateY(10%);
+    transition: 0.5s ease;
+  }
+  
+  .fotominha:hover ~ .circulosemnada {
+    transform: translateX(-20%) translateY(-15%);
+    transition: 0.5s ease;
+  }
+
+  .circuloroxo {
+    position: absolute; /* Position the circle absolutely within the container */
+    top: 12%; /* Adjust the position as needed */
+    left: 53%; /* Adjust the position as needed */
+    width: 22%; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: 0.5s;
+    
+  }
+  
+  .circulosemnada {
+    position: absolute; /* Position the circle absolutely within the container */
+    top: 35%; /* Adjust the position as needed */
+    left: 68%; /* Adjust the position as needed */
+    width: 22%; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: 0.5s;
+  }
+
+  .logo, .nav-item{
+    margin: 2em;
+    color: #3a3633;
+    font-weight: 400;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .h1Portfolio{
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    font-family: "Josefin sans";
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: 4.5vw;
+    line-height: 1; 
+    text-transform: uppercase;
+  }
+  
+  .euHome{
+    width: 32%;
+    position: absolute;
+    top: 58%;
+    color: #3a3633;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    font-family: "Overpass Mono", serif;
+    font-weight: 100;
+    font-size: 1.3vw;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+
+}
+
+@media (max-width: 1440px) {
+
+  .imageProjects {
+    width: 18em;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+  }
+
 }

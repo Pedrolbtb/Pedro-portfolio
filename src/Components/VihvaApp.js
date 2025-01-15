@@ -11,6 +11,7 @@ import obsremedio from '../assets/obsremedio.jpg';
 import vihvaApp from '../assets/vihvaapp.jpg';
 import kotlin from '../assets/kotlinlogo.png';
 import waves from '../assets/wave.svg';
+import arrowup from '../assets/arrowup.png';
 
 const VihvaApp = () => {
   const sectionsRef = useRef([]);
@@ -30,17 +31,24 @@ const VihvaApp = () => {
     },
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('show');
-            observer.unobserve(entry.target); // Remove observer after showing
+            observer.unobserve(entry.target); 
           }
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of the element is visible
+      { threshold: 0.1 } 
     );
 
     sectionsRef.current.forEach(section => {
@@ -78,9 +86,11 @@ const VihvaApp = () => {
             <div className="overlayPort-text">Vihva foi meu projeto de TCC do meu ano de formatura (2024)</div>
             </div>
             <div>
-              <p>O Vihva é um aplicativo para dispositivos android criado com o objetivo de oferecer uma solução moderna e eficiente para o gerenciamento da saúde. Com uma interface intuitiva e recursos avançados, o aplicativo reúne ferramentas indispensáveis para simplificar e otimizar o cuidado com a saúde, garantindo praticidade na rotina de seus usuários.</p>
+              <p>O Vihva é um aplicativo para dispositivos android criado com o objetivo de oferecer uma solução moderna e 
+              eficiente para o gerenciamento da saúde. Com uma interface intuitiva e recursos avançados, o aplicativo reúne
+               ferramentas indispensáveis para simplificar e otimizar o cuidado com a saúde, garantindo praticidade na rotina de seus usuários.</p>
               <h2>Linguagens Utilizadas</h2>
-              <img className='logoLinguagens' src={kotlin} alt="Kotlin Logo" />
+              <img  className='logoLinguagens' src={kotlin} alt="Kotlin Logo" />
             </div>
           </div>
         </section>
@@ -99,7 +109,11 @@ const VihvaApp = () => {
           <section ref={el => sectionsRef.current[4] = el} className='AprendizadosHorizontal hidden'>
             <div className='containerAprendizados'>
               <h1 className='SubtituloPagina' style={{ marginTop: '5%' }}>Aprendizados</h1>
-              <p className='aprendizadosText'>O desenvolvimento do Vihva foi uma experiência extremamente enriquecedora, marcando meu primeiro grande projeto utilizando a linguagem Kotlin. Esse desafio não apenas ampliou significativamente meu domínio sobre a linguagem, mas também me proporcionou uma imersão prática no uso de APIs. Além disso, a colaboração constante com a equipe ao longo do projeto foi fundamental para o meu crescimento profissional, permitindo-me aprimorar habilidades de trabalho em grupo e comunicação eficaz.</p>
+              <p className='aprendizadosText'>O desenvolvimento do Vihva foi uma experiência extremamente enriquecedora, 
+              marcando meu primeiro grande projeto utilizando a linguagem Kotlin. Esse desafio não apenas ampliou significativamente 
+              meu domínio sobre a linguagem, mas também me proporcionou uma imersão prática no uso de APIs. Além disso, a colaboração 
+              constante com a equipe ao longo do projeto foi fundamental para o meu crescimento profissional, permitindo-me 
+              aprimorar habilidades de trabalho em grupo e comunicação eficaz.</p>
             </div>
           </section>
           <section ref={el => sectionsRef.current[5] = el} className="hidden">
@@ -108,6 +122,9 @@ const VihvaApp = () => {
               <a href="https://github.com/Pedrolbtb/Vihva-app"><button className='buttonGitVihva'>Repositório no GitHub</button></a>
             </div>
           </section>
+          <button onClick={scrollToTop} className="floating-button">
+          <img style={{width: '80%'}} src={arrowup} alt="Seta para cima" />
+        </button>
         </div>
       </div>
     </>

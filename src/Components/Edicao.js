@@ -86,7 +86,7 @@ const Edicao = () => {
   }, []);
 
   return (
-    <div style={{ backgroundColor: '#1E1E1E', height: '500vh' }}>
+    <div className='containerPretoEdicao'>
       <Helmet>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -150,8 +150,8 @@ const Edicao = () => {
               a essência do jogo e gerou entusiasmo pelo lançamento.
             </p>
             <h2 style={{ color: '#A790E0', marginBottom: '0' }} className="hidden" ref={el => sectionsRef.current[7] = el}>Softwares Utilizados</h2>
-            <img style={{ width: "8%", marginLeft: '1.2%' }} className='logoLinguagens hidden' src={capcut} alt="CapCut Logo" ref={el => sectionsRef.current[8] = el} />
-          </div>
+            <img className='logoLinguagensE hidden' src={capcut} alt="CapCut Logo" ref={el => sectionsRef.current[8] = el} />
+          </div> 
         </div>
         <div>
           <h1 className='SubtituloPaginaEdicao hidden' ref={el => sectionsRef.current[9] = el}>Vídeo em que trabalhei</h1>
@@ -179,8 +179,8 @@ const Edicao = () => {
               garantindo que cada vídeo se destacasse e fosse atraente para o público.
             </p>
             <h2 style={{ color: '#A790E0', marginBottom: '0' }} className="hidden" ref={el => sectionsRef.current[13] = el}>Softwares Utilizados</h2>
-            <img style={{ width: "7%", marginLeft: '1.2%' }} className='logoLinguagens hidden' src={premiere} alt="Adobe Premiere Logo" ref={el => sectionsRef.current[14] = el} />
-            <img style={{ width: "7%", marginLeft: '1.2%' }} className='logoLinguagens hidden' src={after} alt="Adobe After Effects Logo" ref={el => sectionsRef.current[15] = el} />
+            <img className='logoLinguagensE hidden' src={premiere} alt="Adobe Premiere Logo" ref={el => sectionsRef.current[14] = el} />
+            <img className='logoLinguagensE hidden' src={after} alt="Adobe After Effects Logo" ref={el => sectionsRef.current[15] = el} />
           </div>
         </div>
         <div>

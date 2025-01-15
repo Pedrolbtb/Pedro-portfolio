@@ -27,16 +27,16 @@ const About = () => {
          Além disso, possuo experiência na  <span style={{color: "#7a3bee"}}>edição de vídeos</span> em formatos verticais para plataformas como TikTok, Shorts e Reels, vídeos horizontais de conteúdo e na criação
           de vídeos profissionais voltados para conteúdos mais sérios. </p>
         </div>
-      <div style={{width: "45%", marginRight: "5%", marginLeft: "3%", marginBottom: "8%"}}>
+      <div className='containerJornada'>
         <h1 style={{marginTop: "2%", fontSize: "3em"}}>Jornada</h1>
         <p className='habilidades'>Formado pela ETEC João Belarmino no curso técnico em Desenvolvimento de Sistemas (2022-2024), possuo uma sólida base em programação e desenvolvimento de 
           software.</p>
           <div className='buttonContainer'>
-            <button className="buttonDownload" onClick={baixarPDF}>Download Currículo</button>
+            <button className="buttonDownload" onClick={baixarPDF}>Baixe o meu Currículo!</button>
           </div>
       </div>
       </div>
-      <div className="links-content" style={{marginTop: "10%", marginLeft: "3%"}}>
+      <div className="links-contentA" >
           <h3>
             <a href="https://github.com/Pedrolbtb">GitHub</a>
             <img className='arrow-iconlink' src={arrow} alt="arrow" style={{marginTop: "25%"}} />

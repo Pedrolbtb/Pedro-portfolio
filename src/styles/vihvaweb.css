@@ -18,11 +18,6 @@
     margin-bottom: -5%;
   }
 
-  iframe {
-  width: 100%;
-  border: none;
-  height: 70vh; /* 50% da altura da janela de visualização */
-}
 
 .SliderHorizontal {
   display: flex;
@@ -30,4 +25,44 @@
   margin-bottom: 0;
   margin-left: 3%;
   width: 58%; /* Certifique-se de que o contêiner pai pode crescer */
+}
+
+@media (max-width: 1680px) {
+
+  .logoLinguagensH{
+    width: 12%;
+    margin-top: 0;
+    margin-left: 5%;
+  }
+
+  .SliderHorizontal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 3%;
+    width: 67%; /* Certifique-se de que o contêiner pai pode crescer */
+  }
+
+
+}
+
+@media (max-width: 1440px) {
+
+  .TituloContainerWeb {
+    color: #fff;
+    font-size: 9rem;
+    margin-bottom: 5%;
+    font-family: Peanut Butter;
+    font-weight: 100;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .SliderHorizontal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 3%;
+    width: 79%; /* Certifique-se de que o contêiner pai pode crescer */
+  }
+
 }
