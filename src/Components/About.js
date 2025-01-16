@@ -21,7 +21,7 @@ const About = () => {
         <title>Sobre</title>
       </Helmet>
       <div className="conteudoHorizontalAbout">
-        <div style={{width: "45%", marginRight: "5%", marginLeft: "3%"}}>
+        <div className='containerHabilidades'>
         <h1 style={{ marginTop: "2%", fontSize: "3em"}}>Habilidades</h1>
         <p className='habilidades'>Tenho experiência no desenvolvimento de aplicações utilizando <span style={{color: "#7a3bee"}}>Kotlin</span>, <span style={{color: "#7a3bee"}}>HTML</span>, <span style={{color: "#7a3bee"}}>CSS</span> e <span style={{color: "#7a3bee"}}>JavaScript</span>, além de trabalhar com ferramentas como <span style={{color: "#7a3bee"}}>React</span>. Também sou familiarizado com  <span style={{color: "#7a3bee"}}>bancos de dados NoSQL</span>, como o Firebase da Google. Meu conhecimento se estende a elementos de design, incluindo os conceitos de UI/UX, psicologia das cores e tipografia. <br />
          Além disso, possuo experiência na  <span style={{color: "#7a3bee"}}>edição de vídeos</span> em formatos verticais para plataformas como TikTok, Shorts e Reels, vídeos horizontais de conteúdo e na criação

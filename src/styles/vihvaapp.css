@@ -416,3 +416,139 @@
 
 
 }
+
+@media (max-width: 1366px) {
+
+  .containerTitulo {
+    width: 90%;
+    height: 38em;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: #598BA4;
+    display: flex; /* Adiciona flexbox */
+    flex-direction: column; /* Alinha itens verticalmente */
+    justify-content: flex-end; /* Alinha itens no final do container */
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
+    position: relative; /* Permite ajustar a posição */
+    top: -3em; /* Ajusta a posição para ultrapassar o topo */
+  }
+
+  .TituloContainer {
+    color: #fff;
+    font-size: 13rem;
+    margin-bottom: 5%;
+    font-family: Peanut Butter;
+    font-weight: 100;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .conteudoHorizontal p {
+    width: 80%;
+    margin-left: 1%;
+    font-size: 1.2rem;
+    color: #598BA4;
+    font-weight: 100;
+    font-family: Cloudsoft;
+    padding-top: 2%;
+  }
+
+  .imagemVihvaapp {
+    width: 60%;
+    margin-left: 6em; /* Espaçamento entre a imagem e o parágrafo */
+    border:  1px solid #598BA4;
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
+    transition: 0.5s;
+  }
+
+  .overlayPort-text {
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    color: #247894;
+    font-size: 1.2rem;
+    font-family: "Overpass Mono", serif;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Garante que o texto não interfere no hover */
+  }
+
+  .logoLinguagens{
+    width: 17%;
+    margin-top: 0;
+    margin-left: -1%;
+  }
+
+  .conteudoHorizontal h2 {
+    width: 80%;
+    margin-left: 1%;
+    font-size: 1.3rem;
+    color: #3a3633;
+    font-weight: 100;
+    margin-bottom: 2%;
+    font-family: Cloudsoft;
+    padding-top: 2%;
+  }
+
+  .SubtituloPagina {
+    color: #ffffff;
+    font-size: 4rem;
+    background-color: #6196A8;
+    text-align: center;
+    font-family: Peanut Butter;
+    font-weight: 100;
+  }
+
+  .aprendizadosText {
+    width: 80%;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-family: Cloudsoft;
+    padding-top: 2%;
+    margin: 0 auto;
+  }
+
+  .buttonGitVihva{
+    padding: 10px 15px; 
+    font-size: 15px;
+    color: #6196A8; 
+    background-color: white; 
+    font-family: Cloudsoft;
+    border: 1px solid white; 
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 15em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    align-self: center; 
+    margin-top: 10px;
+    margin-left: 10%;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+
+  .buttonOutrosProjetos{
+    padding: 10px 15px; 
+    font-size: 15px;
+    color: #6196A8; 
+    background-color: white; 
+    font-family: Cloudsoft;
+    border: 1px solid white; 
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 15em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    align-self: center; 
+    margin-top: 10px;
+    margin-left: 10%;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+
+}

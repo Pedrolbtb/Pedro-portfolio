@@ -10,3 +10,14 @@
     transform: scale(1.1);
     transition: 0.5s;
   }
+
+  @media (max-width: 1366px) {
+
+    .printVihvawatch {
+      width: 25%;
+      margin-left: 15%;
+      border-radius: 20px;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    
+    }
+  }

@@ -140,7 +140,7 @@ const Edicao = () => {
       <section>
         <div className="conteudoHorizontal">
           <div className="overlayPortE">
-            <img className='imagemEdicao hidden' style={{ width: '70%' }} src={badroom} alt="Bad Room Studio" ref={el => sectionsRef.current[5] = el} />
+            <img className='imagemEdicao hidden' src={badroom} alt="Bad Room Studio" ref={el => sectionsRef.current[5] = el} />
             <div className="overlayPortE-text">Estúdio brasileiro de jogos</div>
           </div>
           <div>
@@ -169,7 +169,7 @@ const Edicao = () => {
       <section>
         <div className="conteudoHorizontal" style={{ marginTop: '5%' }}>
           <div className="overlayPortE">
-            <img className='imagemEdicao hidden' style={{ width: '70%' }} src={drinks} alt="Drinks & Petiscos" ref={el => sectionsRef.current[11] = el} />
+            <img className='imagemEdicao hidden' src={drinks} alt="Drinks & Petiscos" ref={el => sectionsRef.current[11] = el} />
             <div className="overlayPortE-text">Canal especializado na criação de Drinks</div>
           </div>
           <div>

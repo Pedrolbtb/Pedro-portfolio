@@ -560,3 +560,160 @@ a:hover{
   }
 
 }
+
+@media (max-width: 1366px) {
+
+
+  .image-content {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .fotominha {
+    width: 55%;
+    margin-top: 20%;
+    object-fit: contain;
+    z-index: 1;
+    margin-right: 5%;
+    transition: width 0.5s ease, margin-top 0.5s ease;
+  }
+  
+  .fotominha:hover {
+    width: 65%;
+  }
+  
+  .fotominha:hover ~ .circuloroxo{
+    transform: translateX(30%) translateY(10%);
+    transition: 0.5s ease;
+  }
+  
+  .fotominha:hover ~ .circulosemnada {
+    transform: translateX(-20%) translateY(-15%);
+    transition: 0.5s ease;
+  }
+
+  .circuloroxo {
+    position: absolute; /* Position the circle absolutely within the container */
+    top: 15%; /* Adjust the position as needed */
+    left: 56%; /* Adjust the position as needed */
+    width: 18%; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: 0.5s;
+    
+  }
+  
+  .circulosemnada {
+    position: absolute; /* Position the circle absolutely within the container */
+    top: 35%; /* Adjust the position as needed */
+    left: 70%; /* Adjust the position as needed */
+    width: 18%; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: 0.5s;
+  }
+
+  .h1Portfolio{
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    font-family: "Josefin sans";
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: 4.0vw;
+    line-height: 1; 
+    text-transform: uppercase;
+  }
+
+  .euHome{
+    width: 32%;
+    position: absolute;
+    top: 58%;
+    color: #3a3633;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    font-family: "Overpass Mono", serif;
+    font-weight: 100;
+    font-size: 1.2vw;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .links-content {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    font-size: 2.5vh;
+    color: #010409;
+    font-weight: 100;
+    display: flex;
+    font-family: "Overpass Mono", serif;;
+    gap: 10%;
+
+    text-align: center;
+  }
+
+  .containerHome {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 85% 1fr;
+    gap: 20px;
+    width: 95%;
+    height: 82%;
+  }
+
+  .logo, .nav-item{
+    margin: 2em;
+    color: #3a3633;
+    font-weight: 400;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .imageProjects {
+    width: 15em;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    color: #247894;
+    font-size: 1.0rem;
+    font-family: "Overpass Mono", serif;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Garante que o texto não interfere no hover */
+  }
+
+  .arrow-iconlink {
+    position: absolute;
+    top: 55%; /* Centraliza a seta verticalmente */
+    left: 95%; /* Ajuste o valor conforme necessário para posicionar corretamente a seta ao lado do texto */
+    transform: translateY(-115%);
+    width: 1.5em;
+    opacity: 0; /* A seta estará invisível por padrão */
+    transition: 0.5s;
+  }
+
+}
+
+@media (max-width: 1280px) {
+
+  .imageProjects {
+    width: 14em;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+  }
+
+}

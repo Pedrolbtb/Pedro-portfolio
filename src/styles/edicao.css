@@ -216,4 +216,99 @@
   height: 50vh;
 }
   }
+
+  @media (max-width: 1366px) {
+    .containerPretoEdicao{
+      background-Color: #1E1E1E;
+      height: 570vh;
+    }
+
+    .imagemEdicao {
+      width: 60%;
+      margin-left: 6em; /* Espaçamento entre a imagem e o parágrafo */
+      margin-right: 5em;
+      border:  1px solid white;
+      border-radius: 50px;
+      box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
+      transition: 0.5s;
+    }
+
+    .overlayPortE-text {
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 1.3rem;
+      font-family: "Overpass Mono", serif;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none; /* Garante que o texto não interfere no hover */
+    }
+
+    .logoLinguagensE{
+      width: 8%;
+      margin-top: 0;
+      margin-left: 0%;
+    }
+
+    .videosHorizontal {
+      width: 70%;
+      height: 30em;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
+      margin-top: 2%;
+  }
+
+  .videosVertical {
+    width: 70%;
+    height: 30em;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
+    margin-top: 2%;
+}
+
   
+  }
+
+  @media (max-width: 1280px) {
+    .containerPretoEdicao{
+      background-Color: #1E1E1E;
+      height: 585vh;
+    }
+
+    
+.tituloedicao{
+  font-size: 8rem;
+  font-weight: bold;
+  color: #000;
+  font-weight: 100;
+  font-family: 'Poetsen One';
+  margin-bottom: 10px;
+  text-align: end;
+  margin-right: 20%;
+}
+
+.titulo2edicao{
+  font-size: 8rem;
+  font-weight: bold;
+  color: #000;
+  font-weight: 100;
+  font-family: 'Poetsen One';
+  margin-bottom: 10px;
+  text-align: end;
+  margin-right: 40%;
+}
+
+.linha3titulo{
+  background-color: #729ACC;
+  width: 20%;
+  height: 10.4em;
+  border: 1px solid black;
+}
+
+
+  }

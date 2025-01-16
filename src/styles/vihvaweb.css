@@ -66,3 +66,32 @@
   }
 
 }
+
+@media (max-width: 1366px) {
+
+  .logoLinguagensH{
+    width: 12%;
+    margin-top: 0;
+    margin-left: 1%;
+  }
+
+  .SliderHorizontal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 3%;
+    width: 83%; /* Certifique-se de que o contêiner pai pode crescer */
+  }
+}
+
+@media (max-width: 1280px) {
+
+  .SliderHorizontal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 3%;
+    width: 88%; /* Certifique-se de que o contêiner pai pode crescer */
+  }
+  
+}

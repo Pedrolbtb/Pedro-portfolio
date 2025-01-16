@@ -5,6 +5,7 @@
     font-family: "Overpass Mono", serif;
     padding-top: 2%;
   }
+
   
   .conteudoHorizontalAbout {
     display: flex;
@@ -72,6 +73,11 @@
       margin-Bottom: 8%;
   }
 
+  .containerHabilidades{
+    width: 45%;
+    margin-Right: 5%;
+    margin-Left: 3%;
+  }
 
   @media (max-width: 1680px) {
 
@@ -115,6 +121,51 @@
       font-weight: 100;
       font-family: "Overpass Mono", serif;
       padding-top: 2%;
+    }
+
+  }
+
+  @media (max-width: 1366px) {
+
+    .containerHabilidades{
+      width: 45%;
+      margin-Right: 5%;
+      margin-Left: 3%;
+      margin-bottom: 2.9%;
+    }
+  
+
+    .links-contentA {
+      grid-column: 1 / 2;
+      grid-row: 2 / 2;
+      font-size: 2.5vh;
+      color: #010409;
+      font-weight: 100;
+      display: flex;
+      font-family: "Overpass Mono", serif;;
+      gap: 10%;
+      text-align: center;
+      margin-top: 5%;
+      margin-left: 3%;
+    }
+
+  }
+
+  @media (max-width: 1280px) {
+
+    .habilidades {
+      font-size: 0.88rem;
+      color: #010409;
+      font-weight: 100;
+      font-family: "Overpass Mono", serif;
+      padding-top: 2%;
+    }
+
+    .containerHabilidades{
+      width: 45%;
+      margin-Right: 5%;
+      margin-Left: 3%;
+      margin-bottom: 4%;
     }
 
   }
