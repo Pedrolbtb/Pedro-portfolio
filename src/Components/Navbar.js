@@ -22,15 +22,21 @@ const Navbar = () => {
       </div>
       <div className="nav-links">
         <div className={`nav-item ${getLinkClass('/')}`}>
-          <img className='icons' src={inicio} alt="inicio" style={{ width: "1.5em", marginBottom: "0.2em" }} />
+        <Link className='iconMob' to='/'>
+          <img className='iconsNav' src={inicio} alt="inicio" />
+          </Link>
           <Link className='underline' to="/">Início</Link>
         </div>
         <div className={`nav-item ${getLinkClass('/projects')}`}>
-          <img className='icons' src={projetosicon} alt="projetos" style={{ width: "1.5em", marginBottom: "0.2em" }} />
+        <Link className='iconMob' to='/projects'>
+          <img className='iconsNav' src={projetosicon} alt="projetos" />
+          </Link>
           <Link className='underline' to="/projects">Projetos</Link>
         </div>
         <div className={`nav-item ${getLinkClass('/about')}`}>
-          <img className='icons' src={euicon} alt="sobre" style={{ width: "1.5em", marginBottom: "0.2em" }} />
+        <Link className='iconMob' to='/about'>
+          <img className='iconsNav' src={euicon} alt="sobre" />
+          </Link>
           <Link className='underline' to="/about">Sobre</Link>
         </div>
       </div>

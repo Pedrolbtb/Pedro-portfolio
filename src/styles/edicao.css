@@ -1,8 +1,6 @@
 
 .containerPretoEdicao{
   background-Color: #1E1E1E;
-  height: 515vh;
-
 }
 
 .tituloedicao{
@@ -213,14 +211,12 @@
 
 .containerPretoEdicao{
   background-Color: #1E1E1E;
-  height: 50vh;
 }
   }
 
   @media (max-width: 1366px) {
     .containerPretoEdicao{
       background-Color: #1E1E1E;
-      height: 570vh;
     }
 
     .imagemEdicao {
@@ -277,7 +273,6 @@
   @media (max-width: 1280px) {
     .containerPretoEdicao{
       background-Color: #1E1E1E;
-      height: 585vh;
     }
 
     

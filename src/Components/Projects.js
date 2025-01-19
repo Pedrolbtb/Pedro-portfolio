@@ -91,6 +91,13 @@ const Projects = () => {
           <img className='arrow-iconlink' src={arrow} alt="arrow" /></h3>
         </div>
         </div>
+
+
+
+      {/* ---------------------------------- MOBILE ----------------------------- */}
+
+
+
     </>
   );
 };

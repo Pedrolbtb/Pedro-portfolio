@@ -169,3 +169,31 @@
     }
 
   }
+
+  @media (max-width: 480px){
+    .containerAbout{
+      display: none;
+    }
+
+    .highlightr {
+      color: #7a3bee; /* Remove o preenchimento da cor da fonte */
+    }
+
+    .buttonDownloadMob {
+      width: 100%; /* Garante que o botão ocupe 100% da largura do contêiner */
+      height: 150%; /* Ajuste a altura conforme necessário */
+      cursor: pointer;
+      font-size: 1rem;
+      align-items: center;
+      background-color: white;
+      border: 1px #7a3bee solid;
+      color: #7a3bee;
+      border-radius: 50px;
+      font-weight: 100;
+      box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
+      font-family: "Overpass Mono", serif;
+      padding: 1%;
+      margin-top: 10%;
+      margin-bottom: 50%;
+    }
+  }
