@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Swiper from 'swiper';
 import transitionVihvaapp from '../transitionVihvaapp';
 import inicio from '../assets/inicio.jpg';
 import perfil from '../assets/perfil.jpg';
@@ -16,6 +17,29 @@ import arrowup from '../assets/arrowup.png';
 const VihvaApp = () => {
   const sectionsRef = useRef([]);
   const imagesRef = useRef([]);
+  const mobileSectionsRef = useRef([]);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target); 
+            }
+          });
+        },
+        { threshold: 0.1 } 
+      );
+  
+      mobileSectionsRef.current.forEach(section => {
+        if (section) {
+          observer.observe(section);
+        }
+      });
+  
+      return () => observer.disconnect();
+    }, []);
 
   const containerAnimation = {
     hidden: {
@@ -31,12 +55,6 @@ const VihvaApp = () => {
     },
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -68,6 +86,7 @@ const VihvaApp = () => {
 
   return (
     <>
+    <div className='aparecimentomob'>
       <Helmet>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -122,9 +141,51 @@ const VihvaApp = () => {
               <a href="https://github.com/Pedrolbtb/Vihva-app"><button className='buttonGitVihva'>Repositório no GitHub</button></a>
             </div>
           </section>
-          <button onClick={scrollToTop} className="floating-button">
-          <img style={{width: '80%'}} src={arrowup} alt="Seta para cima" />
-        </button>
+        </div>
+      </div>
+      </div>
+
+      
+ {/* ---------------------------------- MOBILE ----------------------------- */}
+  
+
+ <div className='vihvaappMobContainer'>
+        <div className="containerTituloMob hidden" ref={el => mobileSectionsRef.current[0] = el}>
+          <h1 className="TituloContainerMob">Vihva App</h1>
+        </div>
+        <section>
+          <div className='topoHomeMob hidden' ref={el => mobileSectionsRef.current[1] = el}>
+            <img className='imagemVihvaappMob' src={vihvaApp} alt="Vihva App" />
+            <div className='topoHomeMob'>
+              <p className='euVihvaMob'>O Vihva é um aplicativo para dispositivos android criado com o objetivo de oferecer uma solução moderna e 
+              eficiente para o gerenciamento da saúde. Com uma interface intuitiva e recursos avançados, o aplicativo reúne
+              ferramentas indispensáveis para simplificar e otimizar o cuidado com a saúde, garantindo praticidade na rotina de seus usuários.</p>
+              <h2 className='linguagensMob'>Linguagens Utilizadas</h2>
+              <img  className='logoLinguagensMob' src={kotlin} alt="Kotlin Logo" />
+            </div>
+          </div>
+        </section>
+        <img className='waveazul hidden' ref={el => mobileSectionsRef.current[2] = el} src={waves} alt="Wave" />
+        <div style={{ backgroundColor: '#6196A8' }} className='hidden' ref={el => mobileSectionsRef.current[3] = el}>
+          <h1 className='SubtituloPaginaMob'>Galeria de Imagens</h1>
+          <section>
+            <div>
+              <img className='printVihvaappMob hidden' ref={el => mobileSectionsRef.current[4] = el} src={inicio} alt="Início" />
+              <img className='printVihvaappMob hidden' ref={el => mobileSectionsRef.current[5] = el} src={perfil} alt="Perfil" />
+              <img className='printVihvaappMob hidden' ref={el => mobileSectionsRef.current[6] = el} src={alarme} alt="Alarme"/>
+              <img className='printVihvaappMob hidden' ref={el => mobileSectionsRef.current[8] = el} src={calendario} alt="Calendário" />
+            </div>
+          </section>
+          <h1 className='SubtituloPaginaMob'>Aprendizados</h1>
+          <p className='aprendizadosVihvaMob hidden' ref={el => mobileSectionsRef.current[9] = el}>O desenvolvimento do Vihva foi uma experiência extremamente enriquecedora, 
+              marcando meu primeiro grande projeto utilizando a linguagem Kotlin. Esse desafio não apenas ampliou significativamente 
+              meu domínio sobre a linguagem, mas também me proporcionou uma imersão prática no uso de APIs. Além disso, a colaboração 
+              constante com a equipe ao longo do projeto foi fundamental para o meu crescimento profissional, permitindo-me 
+              aprimorar habilidades de trabalho em grupo e comunicação eficaz.</p>
+          <div className="buttonsHorizontal hidden" ref={el => mobileSectionsRef.current[10] = el}>
+            <Link style={{marginBottom: '5%'}} to="/projects"><button className='buttonOutrosProjetosMob'>Outros Projetos</button></Link>
+            <a href="https://github.com/Pedrolbtb/Vihva-app"><button className='buttonGitVihvaMob'>Repositório no GitHub</button></a>
+          </div>
         </div>
       </div>
     </>

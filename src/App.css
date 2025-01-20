@@ -12,6 +12,15 @@
   src: url(../src/assets/CloudSoft-Bold-700.otf);
 }
 
+.containerHomeMob{
+  display: none;
+}
+
+.containerAboutMob{
+  display: none;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -48,14 +57,13 @@
 }
 
 
-.circuloroxo {
-  position: absolute; /* Position the circle absolutely within the container */
-  top: 10%; /* Adjust the position as needed */
-  left: 55%; /* Adjust the position as needed */
-  width: 20%; /* Adjust the size as needed */
-  height: auto; /* Maintain aspect ratio */
+.circuloroxoMob {
+  position: fixed; /* Fixa o elemento na viewport */
+  width: 40%; /* Ajuste o tamanho conforme necessário */
   transition: 0.5s;
-  
+  bottom: 10%; /* Ajuste a posição conforme necessário */
+  right: 10%; /* Ajuste a posição conforme necessário */
+  z-index: 10; /* Garante que o círculo fique sobre outros elementos */
 }
 
 .circulosemnada {
@@ -758,7 +766,7 @@ a:hover{
   .iconMob{
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: -5%;
   }
 
@@ -784,16 +792,36 @@ a:hover{
     display: none;
   }
 
-  .containerHomeMob{
+  .containerHomeMob {
     display: flex;
     width: 95%;
-    height: 100%;
+    max-height: 85vh; /* Garantindo que não ultrapasse 90% da altura da viewport */
     padding: 1%;
     border: 1px solid #7a3bee;
+    overflow-y: scroll;
     border-radius: 50px;
     background-color: whitesmoke;
-    box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);;
+    box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
     flex-direction: column;
+
+}
+
+  .containerAboutMob{
+    display: flex;
+    width: 95%;
+max-height: 83vh; /* Garante que o elemento não ultrapasse a altura da tela */
+padding: 2%;
+border: 1px solid #7a3bee;
+border-radius: 50px;
+background-color: whitesmoke;
+box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
+flex-direction: column;
+overflow-y: auto; /* Adiciona rolagem vertical */
+position: fixed; /* Mantém o elemento na mesma posição em todas as telas */
+left: 0;
+right: 0;
+margin: auto;
+
   }
 
 
@@ -834,12 +862,13 @@ a:hover{
   }
 
   .circuloroxoMob {
-    position: absolute; /* Position the circle absolutely within the container */
-    width: 40%; /* Adjust the size as needed */
+    position: fixed; /* Fixa o elemento na viewport */
+    width: 40%; /* Ajuste do tamanho conforme necessário */
     transition: 0.5s;
-    bottom: 59%;
-    right: 43%;
-  }
+    bottom: 10%; /* Ajuste a posição conforme necessário */
+    right: 10%; /* Ajuste a posição conforme necessário */
+    z-index: 1; /* Garante que o elemento fique abaixo ou acima de outros elementos conforme necessário */
+}
   
   .circulosemnadaMob {
     position: absolute; /* Position the circle absolutely within the container */
@@ -886,7 +915,19 @@ a:hover{
   }
 
   .iconsMobile{
-    
+    transform: scale(1.85);
+  }
+
+  .containerProjects {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr; /* Define uma única coluna */
+    justify-items: center;
   }
 
 }

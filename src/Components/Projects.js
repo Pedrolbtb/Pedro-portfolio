@@ -8,6 +8,9 @@ import vihvawatch from '../assets/vihvawatch.jpg';
 import edicao from '../assets/edicaocapa.jpg';
 import linkbar from './LinkBar'
 import arrow from '../assets/arrow.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Projects = () => {
   const [displayedText, setDisplayedText] = useState("");
@@ -93,9 +96,61 @@ const Projects = () => {
         </div>
 
 
-
       {/* ---------------------------------- MOBILE ----------------------------- */}
 
+      <div className='containerAboutMob'>
+<div style={{marginLeft: '10%', marginTop: '5%', gap: '10%'}} className='conteudoHorizontalHomeMob'>
+  <h3>
+    <a href="https://github.com/Pedrolbtb"><FontAwesomeIcon className='iconsMobile' icon={faGithub} /></a>
+  </h3>
+  <h3>
+    <a href="https://www.linkedin.com/in/pedro-henrique-lopes-batista-teixeira-bomfim-46bb88174/"><FontAwesomeIcon  className='iconsMobile' icon={faLinkedin} /></a>
+   </h3>
+  </div>
+  <div style={{marginTop: '10%'}} className='topoHomeMob'>
+    <h1 className='h1PortfolioMob'>
+      <span className="highlight" >Esses são os</span> <br />meus projetos
+    </h1>
+    <h2 style={{width: '90%'}} className='euHomeMob'>
+      {displayedText}
+      <span style={{ visibility: isCursorVisible ? 'visible' : 'hidden' }}>|</span>
+    </h2>
+  </div>
+  <div className="containerProjects">
+  <div style={{ marginLeft: '5%'}} className="imageProjects">
+  <Link to="/VihvaApp">
+    <div className="overlay">
+      <img className="projects-content" src={vihvaapp} alt="Vihva app" />
+      <div className="overlay-text">Ver mais de Vihva App</div>
+    </div>
+    </Link>
+  </div>
+  <div style={{ marginLeft: '5%'}} className="imageProjects">
+    <Link to="/VihvaWeb">
+    <div className="overlay">
+      <img className="projects-content" src={vihvaweb} alt="Vihva Web" />
+      <div className="overlay-text">Ver mais de Vihva Medical Center</div>
+    </div>
+    </Link>
+  </div>
+  <div style={{ marginLeft: '5%'}} className="imageProjects">
+    <Link to="/VihvaWatch">
+    <div className="overlay">
+      <img className="projects-content" src={vihvawatch} alt="Vihva Watch" />
+      <div className="overlay-text">Ver mais de Vihva Watch</div>
+    </div>
+    </Link>
+  </div>
+  <div style={{ marginLeft: '5%'}} className="imageProjects">
+    <Link to="/Edicao">
+    <div className="overlay">
+      <img style={{border: '1px solid white'}} className="projects-content" src={edicao} alt="Edição de vídeos" />
+      <div className="overlay-text">Ver mais edições de vídeos</div>
+    </div>
+    </Link>
+  </div>
+</div>
+  </div>
 
 
     </>

@@ -53,7 +53,6 @@ const Home = () => {
         <title>Portfólio</title>
       </Helmet>
       <div className='containerHome'>
-        
         <div className="text-content text-contentMob">
           <h1 className='h1Portfolio'>
             <span className="highlight">Olá, eu sou o</span> <br />Pedro Bomfim
@@ -80,7 +79,7 @@ const Home = () => {
 {/*------------------------------------MOBILE--------------------------------*/ }
 
 <div className='containerHomeMob'>
-<div style={{marginLeft: '10%', marginTop: '5%'}} className='conteudoHorizontalHomeMob'>
+<div style={{marginLeft: '10%', marginTop: '5%', gap: '10%'}} className='conteudoHorizontalHomeMob'>
   <h3>
     <a href="https://github.com/Pedrolbtb"><FontAwesomeIcon className='iconsMobile' icon={faGithub} /></a>
   </h3>
@@ -90,8 +89,6 @@ const Home = () => {
 </div>
   <div style={{marginTop: '5%'}} className='topoHomeMob'>
   <img className='fotominhaMob' src={fotominha} alt="Pedro Bomfim" />
-  <img className='circuloroxoMob' src={circuloroxo} alt="circuloroxo" />
-  <img className='circulosemnadaMob' src={circulosemnada} alt="circulosemnada" />
     <h1 className='h1PortfolioMob'>
       <span className="highlight" >Olá, eu sou o</span> <br />Pedro Bomfim
     </h1>
@@ -110,6 +107,7 @@ const Home = () => {
   <div>
   </div>
 </div>
+
     </>
   );
 }
