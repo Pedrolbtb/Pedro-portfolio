@@ -86,6 +86,7 @@ const Edicao = () => {
   }, []);
 
   return (
+    <>
     <div className='containerPretoEdicao'>
       <Helmet>
         <meta charSet="UTF-8" />
@@ -195,7 +196,95 @@ const Edicao = () => {
         </div>
       </section>
     </div>
+
+      {/* ---------------------------------- MOBILE ----------------------------- */}
+
+      <div className='containerPretoEdicaoMob'>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Edição de vídeos</title>
+      </Helmet>
+      <section>
+        <div>
+          <div
+            className='linha1titulo'
+          >
+            <h1 className='tituloedicao'>Edições</h1>
+          </div>
+          <div
+            className='linha4titulo'
+          >
+            <h1 className='tituloedicao'>de </h1>
+          </div>
+        </div>
+        <div className="conteudoHorizontalEdicao">
+          <div
+            className='linha2titulo'
+          >
+            <h1 className='titulo2edicao'>vídeo</h1>
+          </div>
+        </div>
+        <div style={{ height: '7em', marginBottom: '5%' }} className="conteudoHorizontalEdicao">
+          <img className='arrowdown ' src={arrow} alt="" />
+        </div>
+      </section>
+      <section>
+            <img className='imagemEdicao' src={badroom} alt="Bad Room Studio"  />
+          <div>
+            <p className='explicacaoEdicao' >
+              Tive o orgulho de editar o vídeo de anúncio da demonstração do jogo de terror "Two Sisters", do Estúdio
+              brasileiro Bad Room. Esse projeto desafiador destacou minhas habilidades em edição, criando uma narrativa visual impactante que capturou
+              a essência do jogo e gerou entusiasmo pelo lançamento.
+            </p>
+            <h2 style={{ color: '#A790E0', marginTop: '5%', textAlign: 'center' }} >Softwares Utilizados</h2>
+            <img className='logoLinguagensE' src={capcut} alt="CapCut Logo" />
+          </div> 
+        <div>
+          <h1 className='SubtituloPaginaEdicao ' >Vídeo em que trabalhei</h1>
+          <iframe
+            className='videosHorizontal '
+            src="https://www.youtube.com/embed/fN06Y3QNrXo?modestbranding=1&controls=1&showinfo=0&rel=0&fs=0"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+      
+          ></iframe>
+        </div>
+      </section>
+      <hr style={{ border: 'none', height: '2px', backgroundColor: '#313131', marginTop: '5%' }} />
+      <section>
+        <div className='containerDrinks'> 
+            <img className='imagemEdicao' src={drinks} alt="Drinks & Petiscos" />
+          <div className='topoHomeMob'>
+            <p className="explicacaoEdicao" >
+              Com mais de 50 vídeos editados para o canal Drinks & Petiscos, tive a oportunidade de trabalhar em uma variedade
+              de formatos, tanto horizontais quanto verticais. Ao longo desse processo, busquei sempre equilibrar o ritmo dinâmico e a qualidade visual,
+              garantindo que cada vídeo se destacasse e fosse atraente para o público.
+            </p>
+            <h2 style={{ color: '#A790E0', marginTop: '5%', textAlign: 'center' }}>Softwares Utilizados</h2>
+            <div className='conteudoHorizontal'>
+            <img className='logoLinguagensEditores' src={premiere} alt="Adobe Premiere Logo" />
+            <img className='logoLinguagensEditores ' src={after} alt="Adobe After Effects Logo" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 className='SubtituloPaginaEdicao' >Vídeos em que trabalhei</h1>
+          <iframe className='videosHorizontal' width="560" height="315" src="https://www.youtube.com/embed/UmfjTbGEcAI?si=_4Nq3FpuOGEBVjTK" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen ></iframe>
+          <iframe className='videosVertical' width="464" height="824" src="https://www.youtube.com/embed/WAFESlQwtvI" title="Nesta receita só faltou a Brooke Shields!" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen ></iframe>
+        </div>
+      </section>
+      <section>
+        <div style={{padding: '2%'}} className='ButtonsHorizontal'>
+          <Link to="/projects"><button style={{transition: '0.5s'}} className='buttonOutrosProjetos '>Outros Projetos</button></Link>
+        </div>
+      </section>
+    </div>
+
+    </>
+
   );
-}
+};
 
 export default transitionEdicao(Edicao);

@@ -3,6 +3,11 @@
   background-Color: #1E1E1E;
 }
 
+.containerPretoEdicaoMob{
+  display: none;
+}
+
+
 .tituloedicao{
     font-size: 10rem;
     font-weight: bold;
@@ -306,4 +311,111 @@
 }
 
 
+  }
+
+  @media (max-width: 480px){
+    .containerPretoEdicao{
+      display: none;
+    }
+
+    
+.containerPretoEdicaoMob{
+  background-Color: #1E1E1E;
+  display: block;
+}
+
+.tituloedicao{
+  font-size: 5rem;
+  font-weight: bold;
+  color: #000;
+  font-weight: 100;
+  font-family: 'Poetsen One';
+  text-align: end;
+  margin-left: 5%;
+}
+
+
+.linha1titulo{
+  background-color: #A790E0;
+  width: 80%;
+  border: 1px solid black;
+}
+
+.linha4titulo{
+  background-color: #A790E0;
+  width: 30%;
+  margin-left: 40%;
+  border: 1px solid black;
+}
+
+.titulo2edicao{
+  font-size: 5rem;
+  font-weight: bold;
+  color: #000;
+  font-weight: 100;
+  font-family: 'Poetsen One';
+  margin-bottom: 10px;
+  text-align: end;
+  margin-left: 5%;
+}
+
+
+.linha2titulo{
+  background-color: #729ACC;
+  width: 60%;
+  text-align: center;
+  margin-left: 40%;
+  border: 1px solid black;
+}
+
+.imagemEdicao {
+  width: 50%;
+  margin-left: 6em; /* Espaçamento entre a imagem e o parágrafo */
+  margin-right: 5em;
+  margin-bottom: 5%;
+  border:  1px solid white;
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
+  transition: 0.5s;
+}
+
+.explicacaoEdicao{
+  color: whitesmoke;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.logoLinguagensE{
+  width: 28%; 
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Necessário para centralizar imagens */
+}
+
+.logoLinguagensEditores{
+  width: 23%; 
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.SubtituloPaginaEdicao {
+  color: #A790E0;
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+  font-family: 'Poetsen One';
+  margin-top: 10%;
+}
+
+.videosHorizontal {
+  width: 90%;
+  height: 15em;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 30px rgba(1, 1, 1, 0.2);
+  margin-top: 5%;
+}
+
+.containerDrinks{
+  margin-top: 10%;
+}
   }

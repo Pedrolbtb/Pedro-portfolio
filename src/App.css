@@ -57,13 +57,14 @@
 }
 
 
-.circuloroxoMob {
-  position: fixed; /* Fixa o elemento na viewport */
-  width: 40%; /* Ajuste o tamanho conforme necessário */
+.circuloroxo {
+  position: absolute; /* Position the circle absolutely within the container */
+  top: 10%; /* Adjust the position as needed */
+  left: 55%; /* Adjust the position as needed */
+  width: 20%; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
   transition: 0.5s;
-  bottom: 10%; /* Ajuste a posição conforme necessário */
-  right: 10%; /* Ajuste a posição conforme necessário */
-  z-index: 10; /* Garante que o círculo fique sobre outros elementos */
+  
 }
 
 .circulosemnada {
