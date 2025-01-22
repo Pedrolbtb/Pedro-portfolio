@@ -56,6 +56,22 @@
     width: 100%;
   }
 
+  .arrow-iconlinkA {
+    position: absolute;
+    top: 120%; /* Centraliza a seta verticalmente */
+    left: 95%; /* Ajuste o valor conforme necessário para posicionar corretamente a seta ao lado do texto */
+    transform: translateY(-115%);
+    width: 1.5em;
+    opacity: 0; /* A seta estará invisível por padrão */
+    transition: 0.5s;
+  }
+
+  h3:hover .arrow-iconlinkA {
+    opacity: 1;
+    transform: translateX(30%) translateY(-115%);
+    transition: 0.5s;
+  }
+
   .links-contentA {
     grid-column: 1 / 2;
     grid-row: 2 / 2;

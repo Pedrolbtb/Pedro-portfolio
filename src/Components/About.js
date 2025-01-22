@@ -26,8 +26,6 @@ const About = () => {
       
       <div className="containerAbout">
         <div className="conteudoHorizontalAbout">
-          
-          {/* Habilidades Section */}
           <div className="containerHabilidades">
             <h1 className="sectionTitle">Habilidades</h1>
             <p className="habilidades">
@@ -42,8 +40,6 @@ const About = () => {
               voltados para conteúdos mais sérios.
             </p>
           </div>
-
-          {/* Jornada Section */}
           <div className="containerJornada">
             <h1 className="sectionTitle">Jornada</h1>
             <p className="habilidades">
@@ -55,16 +51,14 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        {/* Links Section */}
         <div className="links-contentA">
           <h3>
             <a href="https://github.com/Pedrolbtb">GitHub</a>
-            <img className="arrow-iconlink" src={arrow} alt="arrow" />
+            <img className="arrow-iconlinkA" src={arrow} alt="arrow" />
           </h3>
           <h3>
             <a href="https://www.linkedin.com/in/pedro-henrique-lopes-batista-teixeira-bomfim-46bb88174/">LinkedIn</a>
-            <img className="arrow-iconlink" src={arrow} alt="arrow" />
+            <img className="arrow-iconlinkA" src={arrow} alt="arrow" />
           </h3>
         </div>
       </div>

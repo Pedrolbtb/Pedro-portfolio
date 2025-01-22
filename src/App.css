@@ -125,7 +125,7 @@ html, body{
 .arrow-icon {
   position: absolute;
   top: 50%; /* Centraliza a seta verticalmente */
-  left: 85%; /* Ajuste o valor conforme necessário para posicionar corretamente a seta ao lado do texto */
+  left: 100%; /* Ajuste o valor conforme necessário para posicionar corretamente a seta ao lado do texto */
   transform: translateY(-50%);
   width: 1.5em;
   opacity: 0; /* A seta estará invisível por padrão */
@@ -135,7 +135,7 @@ html, body{
 
 .logo:hover .arrow-icon {
   opacity: 1; /* A seta fica visível quando passar o mouse sobre o container */
-  transform: translateX(30%) translateY(-50%);;
+  transform: translateX(50%) translateY(-50%);;
   transition: 0.5s;
 }
 
