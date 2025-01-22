@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pedro-portfolio/static/css/main.65dfbf1e.css",
-    "main.js": "/Pedro-portfolio/static/js/main.726e2946.js",
+    "main.css": "/Pedro-portfolio/static/css/main.02b44866.css",
+    "main.js": "/Pedro-portfolio/static/js/main.6e179c47.js",
     "static/js/453.64512fd7.chunk.js": "/Pedro-portfolio/static/js/453.64512fd7.chunk.js",
     "static/media/fotominha.png": "/Pedro-portfolio/static/media/fotominha.80977a23c4b013aa2552.png",
     "static/media/drinks.jpg": "/Pedro-portfolio/static/media/drinks.4a57930db7ab21cab67c.jpg",
@@ -39,12 +39,12 @@
     "static/media/wave.svg": "/Pedro-portfolio/static/media/wave.a1d82d4e2c65b6d4354e0053a29f2338.svg",
     "static/media/waveweb.svg": "/Pedro-portfolio/static/media/waveweb.2ad28f4e747ca3b61f82b3569157dfbf.svg",
     "static/media/arrowdown.svg": "/Pedro-portfolio/static/media/arrowdown.e411704adc5a175d09fd3d27bfe379f4.svg",
-    "main.65dfbf1e.css.map": "/Pedro-portfolio/static/css/main.65dfbf1e.css.map",
-    "main.726e2946.js.map": "/Pedro-portfolio/static/js/main.726e2946.js.map",
+    "main.02b44866.css.map": "/Pedro-portfolio/static/css/main.02b44866.css.map",
+    "main.6e179c47.js.map": "/Pedro-portfolio/static/js/main.6e179c47.js.map",
     "453.64512fd7.chunk.js.map": "/Pedro-portfolio/static/js/453.64512fd7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65dfbf1e.css",
-    "static/js/main.726e2946.js"
+    "static/css/main.02b44866.css",
+    "static/js/main.6e179c47.js"
   ]
 }
