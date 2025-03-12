@@ -43,8 +43,9 @@ const About = () => {
           <div className="containerJornada">
             <h1 className="sectionTitle">Jornada</h1>
             <p className="habilidades">
-              Formado pela ETEC João Belarmino no curso técnico em Desenvolvimento de Sistemas (2022-2024), possuo uma 
-              sólida base em programação e desenvolvimento de software.
+              Formado pela  <span className="highlightr">ETEC João Belarmino</span> no  <span className="highlightr">curso técnico em Desenvolvimento de Sistemas (2022-2024)</span>, possuo uma 
+              sólida base em programação e desenvolvimento de software. Em 2025, ingressei em <span className="highlightr">Bacharelado em Sistemas de Informação</span> na <span className="highlightr">Universidade de São Paulo (USP)</span>, 
+              a melhor faculdade da América Latina, onde estou aprimorando meus conhecimentos em tecnologia e desenvolvimento de software.
             </p>
             <div className="buttonContainer">
               <button className="buttonDownload" onClick={baixarPDF}>Baixe o meu Currículo!</button>
